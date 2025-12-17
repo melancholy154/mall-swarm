@@ -92,7 +92,6 @@ knife4j:
     discover:
       version: openapi3 #配置OpenAPI3规范
       enabled: true #配置开启服务发现
-      excluded-services: mall-monitor #排除监控服务
     tags-sorter: order #配置tag排序规则
     operations-sorter: order #配置operation排序规则
 sa-token:
@@ -118,4 +117,3 @@ sa-token:
   token-prefix: Bearer
   # 是否打印banner
   is-print: false
-

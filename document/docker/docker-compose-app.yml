@@ -68,15 +68,3 @@ services:
     external_links:
       - redis:redis #可以用redis这个域名访问redis服务
       - nacos-registry:nacos-registry #可以用nacos-registry这个域名访问nacos服务
-  mall-monitor:
-    image: mall/mall-monitor:1.0-SNAPSHOT
-    container_name: mall-monitor
-    ports:
-      - 8101:8101
-    volumes:
-      - /mydata/app/mall-monitor/logs:/var/logs
-      - /etc/localtime:/etc/localtime
-    environment:
-      - 'TZ="Asia/Shanghai"'
-    external_links:
-      - nacos-registry:nacos-registry #可以用nacos-registry这个域名访问nacos服务

@@ -24,12 +24,6 @@
 - 直接运行com.macro.mall.MallConfigApplication的main函数即可；
 - 访问以下接口获取mall-admin在dev环境下的配置信息：http://localhost:8301/master/admin-dev.yml
 
-### 启动监控中心`mall-monitor`
-
-- 直接运行com.macro.mall.MallMonitorApplication的main函数即可；
-- 运行完成后可以通过监控中心控制台查看：http://localhost:8101
-- 输入账号密码`macro:123456`可以登录查看。
-
 ### 启动网关服务`mall-gateway`
 
 - 直接运行com.macro.mall.MallGatewayApplication的main函数即可；
@@ -78,17 +72,4 @@
 - 注册中心服务信息：
 
 ![](../resource/mall_swarm_windows_01.png)
-
-- 监控中心服务概览信息：
-
-![](../resource/mall_swarm_windows_02.png)
-
-![](../resource/mall_swarm_windows_03.png)
-
-- 监控中心单应用详情信息：
-
-![](../resource/mall_swarm_windows_04.png)
-
-![](../resource/mall_swarm_windows_05.png)
-
 
