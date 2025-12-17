@@ -31,5 +31,3 @@ logging:
   level:
     root: info
     com.macro.mall: debug
-logstash:
-  host: localhost

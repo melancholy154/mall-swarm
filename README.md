@@ -58,7 +58,6 @@ mall
 ├── mall-mbg -- MyBatisGenerator生成的数据库操作代码模块
 ├── mall-auth -- 基于Spring Security Oauth2的统一的认证中心
 ├── mall-gateway -- 基于Spring Cloud Gateway的微服务API网关服务
-├── mall-monitor -- 基于Spring Boot Admin的微服务监控中心
 ├── mall-admin -- 后台管理系统服务
 ├── mall-search -- 基于Elasticsearch的商品搜索系统服务
 ├── mall-portal -- 移动端商城系统服务
@@ -86,9 +85,6 @@ mall
 | MongoDb                | NoSql数据库          | https://www.mongodb.com/                             |
 | Docker                 | 应用容器引擎         | https://www.docker.com/                              |
 | Druid                  | 数据库连接池         | https://github.com/alibaba/druid                     |
-| OSS                    | 对象存储             | https://github.com/aliyun/aliyun-oss-java-sdk        |
-| MinIO                  | 对象存储             | https://github.com/minio/minio                       |
-| LogStash               | 日志收集             | https://github.com/logstash/logstash-logback-encoder |
 | Lombok                 | 简化对象封装工具     | https://github.com/rzwitserloot/lombok               |
 | Seata                  | 全局事务管理框架     | https://github.com/seata/seata                       |
 | Portainer              | 可视化Docker容器管理 | https://github.com/portainer/portainer               |
@@ -126,8 +122,6 @@ mall
 | Mysql         | 5.7    | https://www.mysql.com/                                       |
 | Redis         | 7.0    | https://redis.io/download                                    |
 | Elasticsearch | 7.17.3 | https://www.elastic.co/cn/downloads/elasticsearch            |
-| Kibana        | 7.17.3 | https://www.elastic.co/cn/downloads/kibana                   |
-| Logstash      | 7.17.3 | https://www.elastic.co/cn/downloads/logstash                 |
 | MongoDb       | 5.0    | https://www.mongodb.com/download-center                      |
 | RabbitMq      | 3.10.5 | http://www.rabbitmq.com/download.html                        |
 | nginx         | 1.22   | http://nginx.org/en/download.html                            |
@@ -152,10 +146,6 @@ mall
 - API文档信息，访问地址：http://192.168.3.101:8201
 
 ![](./document/resource/re_mall_swarm_run_04.png)
-
-- 日志收集系统信息，访问地址：http://192.168.3.101:5601
-
-![](./document/resource/re_mall_swarm_run_05.png)
 
 - 使用Kubernetes部署后项目运行状态，访问地址：http://192.168.3.101:30880
 

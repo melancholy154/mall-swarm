@@ -16,7 +16,6 @@
         <module>mall-admin</module>
         <module>mall-search</module>
         <module>mall-portal</module>
-        <module>mall-monitor</module>
         <module>mall-gateway</module>
         <module>mall-auth</module>
     </modules>
@@ -49,8 +48,6 @@
         <spring-data-commons.version>3.2.2</spring-data-commons.version>
         <aliyun-oss.version>2.5.0</aliyun-oss.version>
         <alipay-sdk.version>4.38.61.ALL</alipay-sdk.version>
-        <logstash-logback.version>5.3</logstash-logback.version>
-        <spring-boot-admin.version>3.2.2</spring-boot-admin.version>
         <minio.version>8.4.5</minio.version>
         <knife4j.version>4.5.0</knife4j.version>
         <sa-token.version>1.37.0</sa-token.version>
@@ -181,36 +178,6 @@
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-commons</artifactId>
                 <version>${spring-data-commons.version}</version>
-            </dependency>
-            <!-- 阿里云OSS -->
-            <dependency>
-                <groupId>com.aliyun.oss</groupId>
-                <artifactId>aliyun-sdk-oss</artifactId>
-                <version>${aliyun-oss.version}</version>
-            </dependency>
-            <!--集成logstash-->
-            <dependency>
-                <groupId>net.logstash.logback</groupId>
-                <artifactId>logstash-logback-encoder</artifactId>
-                <version>${logstash-logback.version}</version>
-            </dependency>
-            <!--集成SpringBoot Admin监控-->
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-server</artifactId>
-                <version>${spring-boot-admin.version}</version>
-            </dependency>
-            <!--集成SpringBoot Admin监控客户端-->
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-client</artifactId>
-                <version>${spring-boot-admin.version}</version>
-            </dependency>
-            <!--MinIO JAVA SDK-->
-            <dependency>
-                <groupId>io.minio</groupId>
-                <artifactId>minio</artifactId>
-                <version>${minio.version}</version>
             </dependency>
             <!--支付宝支付Java SDK-->
             <dependency>
