@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
  * oss上传管理Service
  * Created by macro on 2018/5/17.
  */
+@Deprecated
 public interface OssService {
     /**
      * oss上传策略生成

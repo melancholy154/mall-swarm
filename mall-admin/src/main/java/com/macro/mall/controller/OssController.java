@@ -7,21 +7,21 @@ import com.macro.mall.dto.OssPolicyResult;
 import com.macro.mall.service.impl.OssServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
-
 import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Oss相关操作接口
  * Created by macro on 2018/4/26.
  */
-@Controller
+// @Controller
 @Tag(name = "OssController", description = "Oss管理")
-@RequestMapping("/aliyun/oss")
+// @RequestMapping("/aliyun/oss")
+@Deprecated
 public class OssController {
-    @Autowired
+    // @Autowired
     private OssServiceImpl ossService;
 
     @Operation(summary = "oss上传签名生成")

@@ -6,13 +6,11 @@ import com.macro.mall.common.api.CommonResult;
 import com.macro.mall.dto.BucketPolicyConfigDto;
 import com.macro.mall.dto.MinioUploadDto;
 import io.minio.*;
-
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,8 +22,9 @@ import java.util.Date;
  * Created by macro on 2019/12/25.
  */
 @Tag(name = "MinioController", description = "MinIO对象存储管理")
-@Controller
-@RequestMapping("/minio")
+// @Controller
+// @RequestMapping("/minio")
+@Deprecated
 public class MinioController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MinioController.class);
